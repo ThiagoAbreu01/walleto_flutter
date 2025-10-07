@@ -78,11 +78,11 @@ class LoginController extends Cubit<LoginState> {
         await authService.saveDataToLocalStorage(email, password);
       }
 
-      final contaConectada =
+      final loggedUserModel =
           await userService.findLoggedUserModelInLocalStorage();
 
       emit(state.copyWith(
-          status: LoginStatus.initial, contaConectada: contaConectada));
+          status: LoginStatus.initial, loggedUserModel: loggedUserModel));
     } on InvalidCredentialsException catch (e, s) {
       emit(
         state.copyWith(

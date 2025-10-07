@@ -307,8 +307,8 @@ class _RegisterPageState extends State<RegisterPage> with Loader {
                                         _controllerInputNome.text,
                                       ),
                                       email: _controllerInputEmail.text,
-                                      cpf: _controllerInputCPF.text,
-                                      telefone: _controllerInputTelefone.text,
+                                      // cpf: _controllerInputCPF.text,
+                                      telephone: _controllerInputTelefone.text,
                                       password: _controllerInputSenha.text,
                                       confirmPassword:
                                           _controllerInputConfirmarSenha.text,

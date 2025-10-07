@@ -49,8 +49,8 @@ class AuthRepository implements IAuthRepository {
         data: {
           "nome": registerViewModel.nome,
           "email": registerViewModel.email,
-          "cpf": registerViewModel.cpf,
-          "telefone": registerViewModel.telefone,
+          // "cpf": registerViewModel.cpf,
+          "telephone": registerViewModel.telephone,
           "password": registerViewModel.password,
           "confirm_password": registerViewModel.confirmPassword,
         },

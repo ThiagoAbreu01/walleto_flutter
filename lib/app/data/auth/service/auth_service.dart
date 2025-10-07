@@ -55,11 +55,11 @@ class AuthService implements IAuthService {
           message: 'O E-mail não pode ser vazio.');
     }
 
-    if (registerViewModel.cpf.length < 11 || registerViewModel.cpf.length > 11) {
-      throw InvalidCredentialsException(
-          message: 'CPF inválido.');
-    }
-     if (registerViewModel.telefone.length < 10 || registerViewModel.telefone.length > 11) {
+    // if (registerViewModel.cpf.length < 11 || registerViewModel.cpf.length > 11) {
+    //   throw InvalidCredentialsException(
+    //       message: 'CPF inválido.');
+    // }
+     if (registerViewModel.telephone.length < 10 || registerViewModel.telephone.length > 11) {
       throw InvalidCredentialsException(
           message: 'Telefone inválido.');
     }

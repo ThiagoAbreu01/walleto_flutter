@@ -11,7 +11,7 @@ enum LoginStatus {
 
 class LoginState {
   final LoginStatus status;
-  final LoggedUserModel? contaConectada;
+  final LoggedUserModel? loggedUserModel;
   final String? loginEmail;
   final String? loginSenha;
   int? remainingTime;
@@ -23,7 +23,7 @@ class LoginState {
 
   LoginState({
     this.status = LoginStatus.initial,
-    this.contaConectada,
+    this.loggedUserModel,
     this.loginEmail,
     this.loginSenha,
     this.remainingTime,
@@ -35,7 +35,7 @@ class LoginState {
 
   LoginState copyWith({
     LoginStatus? status,
-    LoggedUserModel? contaConectada,
+    LoggedUserModel? loggedUserModel,
     String? loginEmail,
     String? loginSenha,
     int? remainingTime,
@@ -46,7 +46,7 @@ class LoginState {
   }) {
     return LoginState(
       status: status ?? this.status,
-      contaConectada: contaConectada,
+      loggedUserModel: loggedUserModel,
       loginEmail: loginEmail,
       loginSenha: loginSenha,
       remainingTime: remainingTime,

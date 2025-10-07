@@ -2,79 +2,72 @@
 import 'dart:convert';
 import 'dart:typed_data';
 
-import 'package:walleto_flutter/app/core/ui/widgets/global_components/permissao.dart';
-
 class LoggedUserModel {
   final int? id;
-  final String? nomeUsuario;
+  final String? name;
   final String? email;
   final String? cpf;
-  final String? telefone;
-  Permissao? permissao;
-  String? passwordCrypto;
+  final String? telephone;
+  String? password;
   String? iosToken;
   String? androidToken;
   String? refreshToken;
   String? recoverToken;
   Uint8List? profileImage;
-  DateTime? dataCriacaoConta;
+  DateTime? criationDate;
   LoggedUserModel({
     this.id,
-    this.nomeUsuario,
+    this.name,
     this.email,
     this.cpf,
-    this.telefone,
-    this.permissao,
-    this.passwordCrypto,
+    this.telephone,
+    this.password,
     this.iosToken,
     this.androidToken,
     this.refreshToken,
     this.recoverToken,
     this.profileImage,
-    this.dataCriacaoConta,
+    this.criationDate,
   });
 
   LoggedUserModel copyWith({
     int? id,
-    String? nomeUsuario,
+    String? name,
     String? email,
-    String? cpf,
-    String? telefone,
-    Permissao? permissao,
-    String? passwordCrypto,
+    // String? cpf,
+    String? telephone,
+    String? password,
     String? iosToken,
     String? androidToken,
     String? refreshToken,
     String? recoverToken,
     Uint8List? profileImage,
-    DateTime? dataCriacaoConta,
+    DateTime? criationDate,
   }) {
     return LoggedUserModel(
       id: id ?? this.id,
-      nomeUsuario: nomeUsuario ?? this.nomeUsuario,
+      name: name ?? this.name,
       email: email ?? this.email,
-      cpf: cpf ?? this.cpf,
-      telefone: telefone ?? this.telefone,
-      permissao: permissao ?? this.permissao,
-      passwordCrypto: passwordCrypto ?? this.passwordCrypto,
+      // cpf: cpf ?? this.cpf,
+      telephone: telephone ?? this.telephone,
+      password: password ?? this.password,
       iosToken: iosToken ?? this.iosToken,
       androidToken: androidToken ?? this.androidToken,
       refreshToken: refreshToken ?? this.refreshToken,
       recoverToken: recoverToken ?? this.recoverToken,
       profileImage: profileImage ?? this.profileImage,
-      dataCriacaoConta: dataCriacaoConta ?? this.dataCriacaoConta,
+      criationDate: criationDate ?? this.criationDate,
     );
   }
 
   Map<String, dynamic> toMap() {
     return <String, dynamic>{
       'id': id,
-      'nome_usuario': nomeUsuario,
+      'name': name,
       'email': email,
-      'cpf': cpf,
-      'telefone': telefone,
-      'permissao': permissaoToString(permissao),
-      'pass_crypto': passwordCrypto,
+      // 'cpf': cpf,
+      'telephone': telephone,
+      'password': password,
       'ios_token': iosToken,
       'android_token': androidToken,
       'refresh_token': refreshToken,
@@ -82,21 +75,18 @@ class LoggedUserModel {
       'profile_image': (profileImage != null) == true
           ? base64Encode(profileImage!)
           : null,
-      'data_criacao_conta': dataCriacaoConta?.toUtc().toIso8601String(),
+      'criation_date': criationDate?.toUtc().toIso8601String(),
     };
   }
 
   factory LoggedUserModel.fromMap(Map<String, dynamic> map) {
     return LoggedUserModel(
       id: map['id'] as int,
-      nomeUsuario: map['nome_usuario'] as String,
+      name: map['name'] as String,
       email: map['email'] as String,
-      cpf: map['cpf'] as String,
-      telefone: map['telefone'] as String,
-      permissao: map['permissao'] != null
-          ? permissaofromString(map['permissao'] as String)
-          : null,
-      passwordCrypto: map['pass_crypto'] as String,
+      // cpf: map['cpf'] as String,
+      telephone: map['telephone'] as String,
+      password: map['password'] as String,
       iosToken: map['ios_token'] != null ? map['ios_token'] as String : null,
       androidToken:
           map['android_token'] != null ? map['android_token'] as String : null,
@@ -111,8 +101,8 @@ class LoggedUserModel {
       profileImage: map['profile_image'] != null
           ? base64Decode(map['profile_image'])
           : null,
-      dataCriacaoConta: map['data_criacao_conta'] != null
-          ? DateTime.parse(map['data_criacao_conta'])
+      criationDate: map['creation_date'] != null
+          ? DateTime.parse(map['creation_date'])
           : null,
     );
   }

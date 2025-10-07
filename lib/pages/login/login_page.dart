@@ -1,6 +1,5 @@
 // ignore_for_file: use_build_context_synchronously
 import 'dart:io';
-
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -10,6 +9,7 @@ import 'package:walleto_flutter/app/core/ui/extensions/theme_extension.dart';
 import 'package:walleto_flutter/app/core/ui/widgets/custom_text_field/custom_text_field.dart';
 import 'package:walleto_flutter/app/core/ui/widgets/global_components/custom_snackbar.dart';
 import 'package:walleto_flutter/app/core/ui/widgets/global_components/loader.dart';
+import 'package:walleto_flutter/pages/bottom_nav_bar_view.dart';
 import 'package:walleto_flutter/pages/login/login_controller.dart';
 import 'package:walleto_flutter/pages/login/login_state.dart';
 import 'package:walleto_flutter/pages/register/register_router.dart';
@@ -44,10 +44,6 @@ class _LoginPageState extends State<LoginPage> with Loader {
     WidgetsBinding.instance.addPostFrameCallback((timeStamp) async {
       final Map<String, dynamic>? arguments =
           ModalRoute.of(context)!.settings.arguments as Map<String, dynamic>?;
-      //! Testando o delay do requestFingerPrint. Após alguns testes é possível concluir que é essencial ter
-      //! no mínimo uma pequena quantia de Delay, que nesse caso será provido pelas buscas das credencias do usuário no SecureLocalStorage.
-      //! Se nenhum delay for fornecido, existe a possíbilidade do dispositivo não estar com a Feature (Recurso) de FingerPrint pronta,
-      //! dando trigger no BLoC.status Loading e fazendo o usuário aguardar 30s mesmo quando não necessário.
 
       bool shouldRequestFingerprint = arguments?['fingerprint'] ?? false;
 
@@ -99,9 +95,15 @@ class _LoginPageState extends State<LoginPage> with Loader {
                 }
                 if (state.status == LoginStatus.initial &&
                     state.errorMessage == null &&
-                    state.contaConectada != null) {
+                    state.loggedUserModel != null) {
                   hideLoader();
-                  //! ADICIONAR NAVEGAÇÃO PARA PAGINA INICIAL
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(
+                      builder: (context) => BottomNavBarView(
+                        loggedUserModel: state.loggedUserModel!,
+                      ),
+                    ),
+                  );
                 }
               },
               child: GestureDetector(
@@ -252,8 +254,8 @@ class _LoginPageState extends State<LoginPage> with Loader {
                                       onTap: () {
                                         loginController
                                             .requestFingerPrintAuthentication(
-                                              isFromInitState: false,
-                                            );
+                                          isFromInitState: false,
+                                        );
                                       },
                                       child: Icon(
                                         Icons.fingerprint,
@@ -278,17 +280,15 @@ class _LoginPageState extends State<LoginPage> with Loader {
                                     ),
                                     TextSpan(
                                       text: 'Cadastre-se aqui',
-                                      recognizer:
-                                          TapGestureRecognizer()
-                                            ..onTap = () {
-                                              Navigator.of(context).push(
-                                                MaterialPageRoute(
-                                                  builder:
-                                                      (context) =>
-                                                          RegisterRouter.page,
-                                                ),
-                                              );
-                                            },
+                                      recognizer: TapGestureRecognizer()
+                                        ..onTap = () {
+                                          Navigator.of(context).push(
+                                            MaterialPageRoute(
+                                              builder: (context) =>
+                                                  RegisterRouter.page,
+                                            ),
+                                          );
+                                        },
                                       style: TextStyle(
                                         color: context.tertiaryColor,
                                         fontSize: 16,
