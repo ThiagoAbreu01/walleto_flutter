@@ -1,12 +1,12 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'dart:io';
 
-import 'package:walleto_flutter/app/core/helpers/constants.dart';
-import 'package:walleto_flutter/app/core/local_storage/secure_storage/secure_local_storage.dart';
-import 'package:walleto_flutter/app/core/logger/logger.dart';
-import 'package:walleto_flutter/app/data/user/repository/user_repository.dart';
-import 'package:walleto_flutter/app/data/user/service/i_user_service.dart';
-import 'package:walleto_flutter/app/models/logged_user_model.dart';
+import 'package:granio_flutter/app/core/helpers/constants.dart';
+import 'package:granio_flutter/app/core/local_storage/secure_storage/secure_local_storage.dart';
+import 'package:granio_flutter/app/core/logger/logger.dart';
+import 'package:granio_flutter/app/data/user/repository/user_repository.dart';
+import 'package:granio_flutter/app/data/user/service/i_user_service.dart';
+import 'package:granio_flutter/app/models/logged_user_model.dart';
 
 class UserService implements IUserService {
   final UserRepository userRepository;

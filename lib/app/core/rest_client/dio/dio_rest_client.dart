@@ -1,13 +1,13 @@
-import 'package:walleto_flutter/app/core/config/env/env.dart';
-import 'package:walleto_flutter/app/core/helpers/constants.dart';
-import 'package:walleto_flutter/app/core/local_storage/secure_storage/secure_local_storage.dart';
-import 'package:walleto_flutter/app/core/logger/logger.dart';
-import 'package:walleto_flutter/app/core/rest_client/dio/interceptors/auth_interceptor.dart';
-import 'package:walleto_flutter/app/core/rest_client/rest_client_exception.dart';
+import 'package:granio_flutter/app/core/config/env/env.dart';
+import 'package:granio_flutter/app/core/helpers/constants.dart';
+import 'package:granio_flutter/app/core/local_storage/secure_storage/secure_local_storage.dart';
+import 'package:granio_flutter/app/core/logger/logger.dart';
+import 'package:granio_flutter/app/core/rest_client/dio/interceptors/auth_interceptor.dart';
+import 'package:granio_flutter/app/core/rest_client/rest_client_exception.dart';
 import 'package:dio/dio.dart';
 
-import 'package:walleto_flutter/app/core/rest_client/rest_client.dart';
-import 'package:walleto_flutter/app/core/rest_client/rest_client_response.dart';
+import 'package:granio_flutter/app/core/rest_client/rest_client.dart';
+import 'package:granio_flutter/app/core/rest_client/rest_client_response.dart';
 
 class DioRestClient implements RestClient {
   late final Dio _dio;

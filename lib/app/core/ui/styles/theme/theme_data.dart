@@ -1,5 +1,5 @@
-import 'package:walleto_flutter/app/core/ui/styles/theme/dark_theme_colors.dart';
-import 'package:walleto_flutter/app/core/ui/styles/theme/light_theme_colors.dart';
+import 'package:granio_flutter/app/core/ui/styles/theme/dark_theme_colors.dart';
+import 'package:granio_flutter/app/core/ui/styles/theme/light_theme_colors.dart';
 import 'package:flutter/material.dart';
 
 class AppDarkTheme {

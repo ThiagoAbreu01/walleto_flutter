@@ -1,8 +1,8 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
-import 'package:walleto_flutter/app/core/ui/extensions/size_screen_extension.dart';
-import 'package:walleto_flutter/app/core/ui/extensions/theme_extension.dart';
-import 'package:walleto_flutter/app/core/ui/styles/text_styles.dart';
-import 'package:walleto_flutter/app/core/ui/widgets/custom_buttom/custom_buttom.dart';
+import 'package:granio_flutter/app/core/ui/extensions/size_screen_extension.dart';
+import 'package:granio_flutter/app/core/ui/extensions/theme_extension.dart';
+import 'package:granio_flutter/app/core/ui/styles/text_styles.dart';
+import 'package:granio_flutter/app/core/ui/widgets/custom_buttom/custom_buttom.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';

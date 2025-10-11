@@ -1,5 +1,5 @@
-import 'package:walleto_flutter/app/models/confirm_login_model.dart';
-import 'package:walleto_flutter/pages/register/view_models/register_view_model.dart';
+import 'package:granio_flutter/app/models/confirm_login_model.dart';
+import 'package:granio_flutter/pages/register/view_models/register_view_model.dart';
 
 abstract class IAuthRepository {
   Future<Map<String, String>?> fetchSecureLocalStorageLoginData();

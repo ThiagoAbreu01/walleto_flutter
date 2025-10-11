@@ -1,5 +1,5 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
-import 'package:walleto_flutter/app/models/logged_user_model.dart';
+import 'package:granio_flutter/app/models/logged_user_model.dart';
 
 enum LoginStatus {
   // ignore: constant_identifier_names

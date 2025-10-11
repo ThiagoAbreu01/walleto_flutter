@@ -3,16 +3,16 @@ import 'dart:io';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:walleto_flutter/app/core/helpers/set_screen_mode.dart';
-import 'package:walleto_flutter/app/core/ui/extensions/size_screen_extension.dart';
-import 'package:walleto_flutter/app/core/ui/extensions/theme_extension.dart';
-import 'package:walleto_flutter/app/core/ui/widgets/custom_text_field/custom_text_field.dart';
-import 'package:walleto_flutter/app/core/ui/widgets/global_components/custom_snackbar.dart';
-import 'package:walleto_flutter/app/core/ui/widgets/global_components/loader.dart';
-import 'package:walleto_flutter/pages/bottom_nav_bar_view.dart';
-import 'package:walleto_flutter/pages/login/login_controller.dart';
-import 'package:walleto_flutter/pages/login/login_state.dart';
-import 'package:walleto_flutter/pages/register/register_router.dart';
+import 'package:granio_flutter/app/core/helpers/set_screen_mode.dart';
+import 'package:granio_flutter/app/core/ui/extensions/size_screen_extension.dart';
+import 'package:granio_flutter/app/core/ui/extensions/theme_extension.dart';
+import 'package:granio_flutter/app/core/ui/widgets/custom_text_field/custom_text_field.dart';
+import 'package:granio_flutter/app/core/ui/widgets/global_components/custom_snackbar.dart';
+import 'package:granio_flutter/app/core/ui/widgets/global_components/loader.dart';
+import 'package:granio_flutter/pages/bottom_nav_bar_view.dart';
+import 'package:granio_flutter/pages/login/login_controller.dart';
+import 'package:granio_flutter/pages/login/login_state.dart';
+import 'package:granio_flutter/pages/register/register_router.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});

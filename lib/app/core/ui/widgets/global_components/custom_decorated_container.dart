@@ -1,6 +1,6 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
-import 'package:walleto_flutter/app/core/ui/extensions/theme_extension.dart';
-import 'package:walleto_flutter/app/core/ui/widgets/global_components/custom_box_shadow.dart';
+import 'package:granio_flutter/app/core/ui/extensions/theme_extension.dart';
+import 'package:granio_flutter/app/core/ui/widgets/global_components/custom_box_shadow.dart';
 import 'package:flutter/material.dart';
 
 class CustomDecoratedContainer extends StatefulWidget {

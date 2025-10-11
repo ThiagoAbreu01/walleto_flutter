@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_lazy_indexed_stack/flutter_lazy_indexed_stack.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:walleto_flutter/app/core/ui/widgets/custom_bottom_nav_bar/custom_bottom_nav_bar.dart';
-import 'package:walleto_flutter/app/models/logged_user_model.dart';
-import 'package:walleto_flutter/pages/history/history_page.dart';
-import 'package:walleto_flutter/pages/home/home_router.dart';
+import 'package:granio_flutter/app/core/ui/widgets/custom_bottom_nav_bar/custom_bottom_nav_bar.dart';
+import 'package:granio_flutter/app/models/logged_user_model.dart';
+import 'package:granio_flutter/pages/history/history_page.dart';
+import 'package:granio_flutter/pages/home/home_router.dart';
 
 class BottomNavBarView extends StatefulWidget {
   final LoggedUserModel loggedUserModel;

@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:walleto_flutter/app/core/exceptions/no_credential_saved_in_local_storage_exception.dart';
+import 'package:granio_flutter/app/core/exceptions/no_credential_saved_in_local_storage_exception.dart';
 
 import '../../app/core/config/env/env.dart';
 import '../../app/core/exceptions/failure.dart';

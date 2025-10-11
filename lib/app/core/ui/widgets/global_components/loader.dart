@@ -1,5 +1,5 @@
-import 'package:walleto_flutter/app/core/ui/extensions/size_screen_extension.dart';
-import 'package:walleto_flutter/app/core/ui/extensions/theme_extension.dart';
+import 'package:granio_flutter/app/core/ui/extensions/size_screen_extension.dart';
+import 'package:granio_flutter/app/core/ui/extensions/theme_extension.dart';
 import 'package:flutter/material.dart';
 import 'package:loading_animation_widget/loading_animation_widget.dart';
 

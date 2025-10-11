@@ -1,4 +1,4 @@
-package com.example.walleto_flutter
+package com.example.granio_flutter
 
 import io.flutter.embedding.android.FlutterActivity
 

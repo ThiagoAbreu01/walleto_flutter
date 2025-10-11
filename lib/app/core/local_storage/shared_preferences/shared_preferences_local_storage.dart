@@ -1,5 +1,5 @@
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:walleto_flutter/app/core/local_storage/shared_preferences/i_shared_preferences_local_storage.dart';
+import 'package:granio_flutter/app/core/local_storage/shared_preferences/i_shared_preferences_local_storage.dart';
 
 class SharedPreferencesLocalStorage implements ISharedPreferencesLocalStorage {
   Future<SharedPreferences> get _instance => SharedPreferences.getInstance();

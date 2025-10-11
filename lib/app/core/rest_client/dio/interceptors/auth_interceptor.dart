@@ -1,8 +1,8 @@
 import 'package:dio/dio.dart';
-import 'package:walleto_flutter/app/core/helpers/constants.dart';
+import 'package:granio_flutter/app/core/helpers/constants.dart';
 
-import 'package:walleto_flutter/app/core/local_storage/secure_storage/secure_local_storage.dart';
-import 'package:walleto_flutter/app/core/logger/logger.dart';
+import 'package:granio_flutter/app/core/local_storage/secure_storage/secure_local_storage.dart';
+import 'package:granio_flutter/app/core/logger/logger.dart';
 
 class AuthInterceptor extends Interceptor {
   SecureLocalStorage secureLocalStorage;

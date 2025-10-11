@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:walleto_flutter/app/core/ui/extensions/theme_extension.dart';
+import 'package:granio_flutter/app/core/ui/extensions/theme_extension.dart';
 
 // ignore: must_be_immutable
 class CustomNavigationRail extends StatefulWidget {

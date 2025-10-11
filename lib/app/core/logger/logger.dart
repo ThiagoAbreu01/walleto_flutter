@@ -1,4 +1,4 @@
-import 'package:walleto_flutter/app/core/logger/i_logger.dart';
+import 'package:granio_flutter/app/core/logger/i_logger.dart';
 import 'package:logger/logger.dart' as log;
 
 class Logger implements ILogger {

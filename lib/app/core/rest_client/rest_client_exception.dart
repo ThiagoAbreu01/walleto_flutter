@@ -1,4 +1,4 @@
-import 'package:walleto_flutter/app/core/rest_client/rest_client_response.dart';
+import 'package:granio_flutter/app/core/rest_client/rest_client_response.dart';
 
 class RestClientException implements Exception {
   final String? message;

@@ -1,5 +1,5 @@
-import 'package:walleto_flutter/app/core/ui/styles/app_colors.dart';
-import 'package:walleto_flutter/app/core/ui/styles/text_styles.dart';
+import 'package:granio_flutter/app/core/ui/styles/app_colors.dart';
+import 'package:granio_flutter/app/core/ui/styles/text_styles.dart';
 import 'package:flutter/material.dart';
 
 class AppStyles {

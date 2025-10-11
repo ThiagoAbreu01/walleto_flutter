@@ -1,17 +1,17 @@
 import 'dart:io';
 
-import 'package:walleto_flutter/app/core/exceptions/failure.dart';
-import 'package:walleto_flutter/app/core/exceptions/invalid_credentials_exception.dart';
-import 'package:walleto_flutter/app/core/exceptions/user_exists_exception.dart';
-import 'package:walleto_flutter/app/core/exceptions/wrong_email_confirmation_code_exception.dart';
-import 'package:walleto_flutter/app/core/local_storage/secure_storage/secure_local_storage.dart';
-import 'package:walleto_flutter/app/core/logger/logger.dart';
-import 'package:walleto_flutter/app/core/rest_client/dio/dio_rest_client.dart';
-import 'package:walleto_flutter/app/core/rest_client/rest_client_exception.dart';
-import 'package:walleto_flutter/app/data/auth/repository/i_auth_repository.dart';
-import 'package:walleto_flutter/app/models/confirm_login_model.dart';
+import 'package:granio_flutter/app/core/exceptions/failure.dart';
+import 'package:granio_flutter/app/core/exceptions/invalid_credentials_exception.dart';
+import 'package:granio_flutter/app/core/exceptions/user_exists_exception.dart';
+import 'package:granio_flutter/app/core/exceptions/wrong_email_confirmation_code_exception.dart';
+import 'package:granio_flutter/app/core/local_storage/secure_storage/secure_local_storage.dart';
+import 'package:granio_flutter/app/core/logger/logger.dart';
+import 'package:granio_flutter/app/core/rest_client/dio/dio_rest_client.dart';
+import 'package:granio_flutter/app/core/rest_client/rest_client_exception.dart';
+import 'package:granio_flutter/app/data/auth/repository/i_auth_repository.dart';
+import 'package:granio_flutter/app/models/confirm_login_model.dart';
 import 'package:flutter/foundation.dart' show kIsWeb;
-import 'package:walleto_flutter/pages/register/view_models/register_view_model.dart';
+import 'package:granio_flutter/pages/register/view_models/register_view_model.dart';
 
 class AuthRepository implements IAuthRepository {
   final DioRestClient dio;

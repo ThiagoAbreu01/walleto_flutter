@@ -1,7 +1,7 @@
 
 import 'package:flutter/material.dart';
-import 'package:walleto_flutter/app/core/ui/widgets/feature_discovery/src/rendering/proxy_box.dart';
-import 'package:walleto_flutter/app/core/ui/widgets/feature_discovery/src/widgets/overlay.dart';
+import 'package:granio_flutter/app/core/ui/widgets/feature_discovery/src/rendering/proxy_box.dart';
+import 'package:granio_flutter/app/core/ui/widgets/feature_discovery/src/widgets/overlay.dart';
 
 class Content extends StatelessWidget {
   final FeatureOverlayState state;

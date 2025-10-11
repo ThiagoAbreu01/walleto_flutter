@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:walleto_flutter/app/core/ui/extensions/size_screen_extension.dart';
-import 'package:walleto_flutter/app/core/ui/extensions/theme_extension.dart';
-import 'package:walleto_flutter/app/core/ui/styles/text_styles.dart';
+import 'package:granio_flutter/app/core/ui/extensions/size_screen_extension.dart';
+import 'package:granio_flutter/app/core/ui/extensions/theme_extension.dart';
+import 'package:granio_flutter/app/core/ui/styles/text_styles.dart';
 
 class CustomTextField extends StatefulWidget {
   final String name;

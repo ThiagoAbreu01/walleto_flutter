@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:walleto_flutter/app/core/ui/extensions/size_screen_extension.dart';
-import 'package:walleto_flutter/app/core/ui/extensions/theme_extension.dart';
-import 'package:walleto_flutter/app/core/ui/widgets/global_components/custom_box_shadow.dart';
+import 'package:granio_flutter/app/core/ui/extensions/size_screen_extension.dart';
+import 'package:granio_flutter/app/core/ui/extensions/theme_extension.dart';
+import 'package:granio_flutter/app/core/ui/widgets/global_components/custom_box_shadow.dart';
 
 class CustomBottomNavBar extends StatefulWidget {
   final int currentIndex;

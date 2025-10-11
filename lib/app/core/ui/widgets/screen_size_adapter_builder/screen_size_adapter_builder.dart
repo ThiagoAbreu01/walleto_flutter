@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:walleto_flutter/app/core/helpers/screen_size_adapter.dart';
+import 'package:granio_flutter/app/core/helpers/screen_size_adapter.dart';
 
 class ScreenSizeAdapterBuilder extends StatefulWidget {
   final Widget Function(BuildContext context) buildMobile;

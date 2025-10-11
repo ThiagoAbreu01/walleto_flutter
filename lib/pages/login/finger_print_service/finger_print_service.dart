@@ -3,7 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:local_auth/error_codes.dart' as auth_error;
 import 'package:local_auth/local_auth.dart';
 import 'package:local_auth_android/local_auth_android.dart' as auth_android;
-import 'package:walleto_flutter/app/core/exceptions/finger_print_exception.dart';
+import 'package:granio_flutter/app/core/exceptions/finger_print_exception.dart';
 // import 'package:local_auth_ios/local_auth_ios.dart' as auth_ios;
 
 class FingerPrintService {

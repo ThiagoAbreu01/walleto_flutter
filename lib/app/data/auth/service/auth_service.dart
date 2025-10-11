@@ -1,4 +1,4 @@
-import 'package:walleto_flutter/app/core/helpers/constants.dart';
+import 'package:granio_flutter/app/core/helpers/constants.dart';
 
 import '../../../core/exceptions/invalid_credentials_exception.dart';
 import '../../../core/exceptions/user_did_not_accepted_politics_exception.dart';

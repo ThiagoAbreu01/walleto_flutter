@@ -3,15 +3,15 @@ import 'package:flutter/material.dart';
 // import 'package:asuka/asuka.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:walleto_flutter/app/core/helpers/set_screen_mode.dart';
-import 'package:walleto_flutter/app/core/provider/application_binding.dart';
-import 'package:walleto_flutter/app/core/ui/styles/theme/custom_theme_switcher.dart';
-import 'package:walleto_flutter/app/core/ui/widgets/feature_discovery/src/foundation/feature_discovery.dart';
-import 'package:walleto_flutter/app/core/ui/widgets/feature_discovery/src/foundation/persistence_provider.dart';
-import 'package:walleto_flutter/pages/login/login_router.dart';
+import 'package:granio_flutter/app/core/helpers/set_screen_mode.dart';
+import 'package:granio_flutter/app/core/provider/application_binding.dart';
+import 'package:granio_flutter/app/core/ui/styles/theme/custom_theme_switcher.dart';
+import 'package:granio_flutter/app/core/ui/widgets/feature_discovery/src/foundation/feature_discovery.dart';
+import 'package:granio_flutter/app/core/ui/widgets/feature_discovery/src/foundation/persistence_provider.dart';
+import 'package:granio_flutter/pages/login/login_router.dart';
 
-class WalletoFlutter extends StatelessWidget {
-  const WalletoFlutter({super.key});
+class GranioFlutter extends StatelessWidget {
+  const GranioFlutter({super.key});
   @override
   Widget build(BuildContext context) {
     SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);

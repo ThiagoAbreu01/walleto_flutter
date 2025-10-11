@@ -1,5 +1,5 @@
-import 'package:walleto_flutter/app/core/local_storage/secure_storage/secure_local_storage.dart';
-import 'package:walleto_flutter/app/core/ui/styles/theme/theme_data.dart';
+import 'package:granio_flutter/app/core/local_storage/secure_storage/secure_local_storage.dart';
+import 'package:granio_flutter/app/core/ui/styles/theme/theme_data.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 

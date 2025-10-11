@@ -1,8 +1,8 @@
 import 'package:flutter/services.dart';
-import 'package:walleto_flutter/app/core/helpers/custom_input_formatter.dart';
-import 'package:walleto_flutter/app/core/ui/extensions/size_screen_extension.dart';
-import 'package:walleto_flutter/app/core/ui/widgets/custom_text_field/custom_text_field.dart';
-import 'package:walleto_flutter/pages/register/view_models/register_view_model.dart';
+import 'package:granio_flutter/app/core/helpers/custom_input_formatter.dart';
+import 'package:granio_flutter/app/core/ui/extensions/size_screen_extension.dart';
+import 'package:granio_flutter/app/core/ui/widgets/custom_text_field/custom_text_field.dart';
+import 'package:granio_flutter/pages/register/view_models/register_view_model.dart';
 
 import '../../app/core/ui/extensions/theme_extension.dart';
 import '../../app/core/ui/widgets/global_components/custom_snackbar.dart';

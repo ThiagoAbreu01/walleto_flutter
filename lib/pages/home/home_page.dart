@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:walleto_flutter/app/core/ui/extensions/size_screen_extension.dart';
-import 'package:walleto_flutter/app/core/ui/extensions/theme_extension.dart';
-import 'package:walleto_flutter/app/models/logged_user_model.dart';
+import 'package:granio_flutter/app/core/ui/extensions/size_screen_extension.dart';
+import 'package:granio_flutter/app/core/ui/extensions/theme_extension.dart';
+import 'package:granio_flutter/app/models/logged_user_model.dart';
 
 class HomePage extends StatefulWidget {
   final LoggedUserModel loggedUserModel;

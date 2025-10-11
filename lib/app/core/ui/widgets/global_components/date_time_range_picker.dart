@@ -1,4 +1,4 @@
-import 'package:walleto_flutter/app/core/ui/extensions/theme_extension.dart';
+import 'package:granio_flutter/app/core/ui/extensions/theme_extension.dart';
 import 'package:flutter/material.dart';
 
 class DateTimeRangePicker {

@@ -1,11 +1,11 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:walleto_flutter/app/core/ui/extensions/size_screen_extension.dart';
-import 'package:walleto_flutter/app/core/ui/extensions/theme_extension.dart';
+import 'package:granio_flutter/app/core/ui/extensions/size_screen_extension.dart';
+import 'package:granio_flutter/app/core/ui/extensions/theme_extension.dart';
 import 'dart:io' show Platform;
 
-import 'package:walleto_flutter/app/core/ui/styles/theme/custom_theme_switcher.dart';
+import 'package:granio_flutter/app/core/ui/styles/theme/custom_theme_switcher.dart';
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   final IconData? icon;

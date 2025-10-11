@@ -1,11 +1,11 @@
 import 'dart:async';
 import 'dart:math';
 
-import 'package:walleto_flutter/app/core/ui/widgets/feature_discovery/src/foundation/bloc.dart';
-import 'package:walleto_flutter/app/core/ui/widgets/feature_discovery/src/foundation/feature_discovery.dart';
-import 'package:walleto_flutter/app/core/ui/widgets/feature_discovery/src/rendering/custom_layout.dart';
-import 'package:walleto_flutter/app/core/ui/widgets/feature_discovery/src/widgets/content.dart';
-import 'package:walleto_flutter/app/core/ui/widgets/feature_discovery/src/widgets/layout.dart';
+import 'package:granio_flutter/app/core/ui/widgets/feature_discovery/src/foundation/bloc.dart';
+import 'package:granio_flutter/app/core/ui/widgets/feature_discovery/src/foundation/feature_discovery.dart';
+import 'package:granio_flutter/app/core/ui/widgets/feature_discovery/src/rendering/custom_layout.dart';
+import 'package:granio_flutter/app/core/ui/widgets/feature_discovery/src/widgets/content.dart';
+import 'package:granio_flutter/app/core/ui/widgets/feature_discovery/src/widgets/layout.dart';
 import 'package:flutter/material.dart';
 
 class DescribedFeatureOverlay extends StatefulWidget {

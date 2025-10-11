@@ -1,6 +1,6 @@
 {
-    "name": "walleto_flutter",
-    "short_name": "walleto_flutter",
+    "name": "granio_flutter",
+    "short_name": "granio_flutter",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

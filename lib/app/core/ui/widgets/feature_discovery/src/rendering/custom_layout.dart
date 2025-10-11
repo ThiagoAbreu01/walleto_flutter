@@ -2,7 +2,7 @@ import 'dart:math';
 
 import 'package:flutter/animation.dart';
 import 'package:flutter/rendering.dart';
-import 'package:walleto_flutter/app/core/ui/widgets/feature_discovery/src/widgets/overlay.dart';
+import 'package:granio_flutter/app/core/ui/widgets/feature_discovery/src/widgets/overlay.dart';
 
 enum BackgroundContentLayout {
   background,

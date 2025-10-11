@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:walleto_flutter/app/core/ui/widgets/feature_discovery/src/foundation/bloc.dart';
+import 'package:granio_flutter/app/core/ui/widgets/feature_discovery/src/foundation/bloc.dart';
 
 import 'persistence_provider.dart';
 
